@@ -47,7 +47,7 @@ namespace ProyectoFinal
         private void btnOpcionBuscar_Click(object sender, EventArgs e)
         {
             bloqueo();
-            MessageBox.Show("Para modificar un usuario primero se nececita validar el usuario, posteriormente se desbloquean los campos a modificar");
+            MessageBox.Show("Para modificar un usuario primero se nececita validar el usuario, posteriormente se desbloquean los campos a modificar.");
             txtUsuario.Enabled = true;
             btnBuscar.Enabled = true;
             lblOpcion.Text = "BUSCAR:";
