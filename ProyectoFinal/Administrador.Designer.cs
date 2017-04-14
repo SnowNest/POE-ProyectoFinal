@@ -85,6 +85,7 @@
             this.Controls.Add(this.btnIngresoTienda);
             this.Name = "Administrador";
             this.Text = "Administrador";
+            this.Load += new System.EventHandler(this.Administrador_Load);
             this.ResumeLayout(false);
 
         }

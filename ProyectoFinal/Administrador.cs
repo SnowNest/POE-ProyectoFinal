@@ -37,5 +37,10 @@ namespace ProyectoFinal
         {
 
         }
+
+        private void Administrador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
