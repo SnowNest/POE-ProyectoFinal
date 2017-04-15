@@ -19,7 +19,7 @@ namespace ProyectoFinal
             conexion.validarConexion();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tienda());
+            Application.Run(new Acceso());
         }
     }
 }

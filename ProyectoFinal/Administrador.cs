@@ -19,7 +19,8 @@ namespace ProyectoFinal
 
         private void btnIngresoTienda_Click(object sender, EventArgs e)
         {
-
+            Tienda abrirVentana = new Tienda();
+            abrirVentana.Show();
         }
 
         private void btnAdministrarUsuarios_Click(object sender, EventArgs e)

@@ -34,19 +34,17 @@ namespace ProyectoFinal
                         }
                         else
                         {
-                            //FALTA TIENDA 
-                            MessageBox.Show("No es admin;");
+                            MessageBox.Show("Bienvenido usuario " + reader.GetValue(1).ToString());
                             reader.Close();
                             conexion.Close();
+                            Tienda abrirVentana = new Tienda();
+                            abrirVentana.Show();
+                            return;
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Contraseña no valida");
-                        return;
-                    }
-                    
+                    }                    
                 }
+                MessageBox.Show("Contraseña no valida " + reader.GetValue(0).ToString() + reader.GetValue(2).ToString());
+                return;
             }
             else
             {

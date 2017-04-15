@@ -12,6 +12,7 @@ namespace ProyectoFinal
 {
     public partial class Tienda : Form
     {
+        int total;
         ClsCompras compra = new ClsCompras();
         public Tienda()
         {
@@ -20,7 +21,7 @@ namespace ProyectoFinal
 
         private void Tienda_Load(object sender, EventArgs e)
         {
-            
+            total = 0;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -113,7 +114,7 @@ namespace ProyectoFinal
                 {
                     if (compra.validarstock(Convert.ToInt32(txtCantidad.Text) , Convert.ToString(cbProducto.Text)) == true)
                     {
-                        compra.creartiket(Convert.ToInt32(txtCantidad.Text), Convert.ToString(cbProducto.Text));
+                        total = total + compra.creartiket(Convert.ToInt32(txtCantidad.Text), Convert.ToString(cbProducto.Text));
                         lbCarrito.Items.Add("[" + Convert.ToInt32(txtCantidad.Text) + "]---" + Convert.ToString(cbProducto.Text));
                         MessageBox.Show("Se agrego el carrito");
                     }
@@ -144,7 +145,9 @@ namespace ProyectoFinal
 
         private void btnCompra_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("El total es: " + total);
+            lbCarrito.Items.Clear();
+            total = 0;
         }
     }
 }
