@@ -36,7 +36,8 @@ namespace ProyectoFinal
 
         private void btnAdministrarTienda_Click(object sender, EventArgs e)
         {
-
+            AdministrarTienda abriradmtienda = new AdministrarTienda();
+            abriradmtienda.Show();
         }
 
         private void Administrador_Load(object sender, EventArgs e)

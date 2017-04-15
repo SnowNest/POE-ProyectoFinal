@@ -79,6 +79,12 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdministrarTienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarTienda.Designer.cs">
+      <DependentUpon>AdministrarTienda.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdmninistrarUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,7 @@
     <Compile Include="Acceso.Designer.cs">
       <DependentUpon>Acceso.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClsBaseDatosTienda.cs" />
     <Compile Include="ClsCompras.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarTienda.resx">
+      <DependentUpon>AdministrarTienda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdmninistrarUsuarios.resx">
       <DependentUpon>AdmninistrarUsuarios.cs</DependentUpon>
